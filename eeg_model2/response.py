@@ -7,8 +7,10 @@ from .data import recenter
 from .preprocess import huber_erp
 
 # 在读取本轮留出成绩前固定；从强正则到弱正则排序，平手优先强约束。
-SETTINGS=tuple((ridge,pool) for ridge in (.1,.01,.001,.0001) for pool in (1.,.1,0.))
-FEATURE_SETTING=(.01,.1)
+STRUCTURES=('transient_contrast','legacy')
+SETTINGS=tuple((ridge,pool,structure) for structure in STRUCTURES
+               for ridge in (.1,.01,.001,.0001) for pool in (1.,.1,0.))
+FEATURE_SETTING=(.01,.1,'legacy')
 
 
 class SourceBank:
@@ -19,40 +21,49 @@ class SourceBank:
         self.phi=np.asarray(phi)
         self.theta=PRIOR.copy();self.theta[3]=1.
         self.cache={}
-        reference=self._build(52/cfg.fs)
         mask=self.t>=0
-        self.scales=np.sqrt(np.mean(reference[...,mask]**2,axis=-1))
-        if np.any(self.scales<1e-10):raise ValueError('形状驱动不能形成非零共同/差异源')
+        self.scales={name:np.sqrt(np.mean(self._build(52/cfg.fs,name)[...,mask]**2,axis=-1))
+                     for name in STRUCTURES}
+        if any(np.any(scale<1e-10) for scale in self.scales.values()):
+            raise ValueError('形状驱动不能形成非零共同/差异源')
 
-    def _build(self,duration):
+    def _build(self,duration,structure='legacy'):
         # 未处理神经源先进入因果记忆状态，再施加与观测相同的滤波和基线。
         q=self.sim.sources(self.theta,[-1],[duration],[1],states=True)[0,:,2]
         common=q.mean(axis=0)
         contrast=(q[0]-q[1])/2  # 左图偏好源减右图偏好源；类别符号在读出处作用。
         parts=[]
-        for source in (common,contrast):
+        for component,source in enumerate((common,contrast)):
             group=[source]
             for tau in (.08,.25,.75):
                 a=np.exp(-1/(self.cfg.fs*tau))
                 group.append(lfilter([1-a],[1,-a],source))
             # 提示后持续状态可延续至本分析窗末尾，不强制800ms回零。
-            step=(self.pt>=self.theta[2]).astype(float)
-            for tau in (.3,.8):
-                a=np.exp(-1/(self.cfg.fs*tau))
-                group.append(lfilter([1-a],[1,-a],step))
+            if structure=='transient_contrast' and component==1:
+                # 少量预设潜伏期变化；差异项不再直接包含持续阶跃。
+                for lag in (-.04,.04):
+                    group.append(np.interp(self.pt-lag,self.pt,source,left=0.,right=source[-1]))
+            else:
+                step=(self.pt>=self.theta[2]).astype(float)
+                for tau in (.3,.8):
+                    a=np.exp(-1/(self.cfg.fs*tau))
+                    group.append(lfilter([1-a],[1,-a],step))
             filtered=sosfiltfilt(self.sim.sos,np.array(group),axis=-1)[...,self.core]
             parts.append(recenter(filtered,self.t))
         return np.array(parts)
 
-    def basis(self,duration):
-        key=round(float(duration),10)
-        if key not in self.cache:self.cache[key]=self._build(duration)/self.scales[...,None]
+    def basis(self,duration,structure='legacy'):
+        if structure not in STRUCTURES:raise ValueError('未知响应结构')
+        key=(round(float(duration),10),structure)
+        if key not in self.cache:
+            self.cache[key]=self._build(duration,structure)/self.scales[structure][...,None]
         return self.cache[key]
 
     def audit(self):
         return dict(theta=self.theta.tolist(),stability=stability(self.theta),
                     memory_tau_s=[.08,.25,.75],persistent_tau_s=[.3,.8],
-                    note='固定稳定动力学及记忆状态；估计等效观测，不作真实连接参数反演')
+                    structures=list(STRUCTURES),contrast_lags_s=[-.04,.04],
+                    note='固定稳定动力学；受限差异候选移除直接持续阶跃，不能保证消除伪影；无空间头模型')
 
 
 def targets(records,prepared,labels,cfg,blocks=None):
@@ -81,14 +92,14 @@ class ResponseFit:
     def predict(self,bank,record_index,labels,durations,common_only=False):
         result=[]
         for sign,dur in zip(labels,durations):
-            b=bank.basis(dur)
+            b=bank.basis(dur,self.setting[2])
             m=self.coef[record_index,0].T@b[0]
             d=self.coef[record_index,1].T@b[1]
             result.append(m if common_only else m+sign*d)
         return np.array(result)
 
     def to_dict(self):
-        return dict(ridge=self.setting[0],pool=self.setting[1],coefficients=self.coef.tolist(),
+        return dict(ridge=self.setting[0],pool=self.setting[1],structure=self.setting[2],coefficients=self.coef.tolist(),
                     effective_linear_df=self.effective_df,nominal_coefficients=int(self.coef.size),
                     training_duration=self.durations.tolist())
 
@@ -109,12 +120,12 @@ def fit_response(records,bank,cells,setting):
         matrix=np.zeros((n*p,n*p));rhs=np.zeros((n*p,3))
         weight=1/(1/neff[:,0]+1/neff[:,1]);weight/=weight.mean()
         for r in range(n):
-            b=bank.basis(durations[r])[component][:,mask].T
+            b=bank.basis(durations[r],setting[2])[component][:,mask].T
             if b.shape[1]!=p:raise ValueError('时间基底形状异常')
             a=slice(r*p,(r+1)*p)
             matrix[a,a]=weight[r]*(b.T@b)/len(b)
             rhs[a]=weight[r]*b.T@target[r][:,mask].T/len(b)
-        ridge,pool=setting
+        ridge,pool,_=setting
         penalty=(ridge*(10 if component else 1))*np.eye(n*p)
         penalty+=pool*(2 if component else 1)*np.kron(lap,np.eye(p))
         solved=np.linalg.solve(matrix+penalty,rhs)

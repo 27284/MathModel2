@@ -1,0 +1,264 @@
+{
+  "signature": {
+    "config": {
+      "seed": 20260925,
+      "fs": 256,
+      "folds": 5,
+      "pre": 0.2,
+      "post": 0.8,
+      "padding": 1.0,
+      "clip_level": 999.9,
+      "lowpass": 30.0,
+      "filter_order": 4,
+      "min_weight": 0.05,
+      "huber_c": 1.345,
+      "source_rho": 0.6,
+      "synaptic_tau": 0.02,
+      "bootstrap": 1000
+    },
+    "python": "3.11.16 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:36:16) [MSC v.1942 64 bit (AMD64)]",
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.1",
+      "matplotlib": "3.10.8",
+      "scikit-learn": "1.9.1",
+      "numba": "0.67.0"
+    },
+    "data_sha256": {
+      "VisualCogA_Task-1": "02a8167b243815c3d048763528641f002eeef3b3903a31ea130b1f4e0cfc6b33",
+      "VisualCogA_Task-2": "c120ef16ed6bd1a2f1e86e0ab030c6306d08e555a71359cf455744a9904cb748",
+      "VisualCogB_Task-1": "e6fb2684bddeed0f43e541a52928ce73c690a9b1f91e23a6404e0537f0ef0fc9",
+      "VisualCogB_Task-2": "c58c998880682027119548029ba92240604b9ecf4138e6c4ea3efe4522212e9d"
+    },
+    "code_sha256": {
+      "eeg_model2\\__init__.py": "daabe12b0da6f11ff44437f3635116d16a196b9d0fb706f0242f0abc29d1c7f8",
+      "eeg_model2\\config.py": "41c81bd3525f87951c62e4434ac0eb09b7f572123d36cfa236a495f4e5431fb2",
+      "eeg_model2\\data.py": "337cfba40349cee0a068ca3d2ec15b5fb61f1a71026c84b5b596bfc67fe5c0aa",
+      "eeg_model2\\diagnostics.py": "539bc3249c2a43139718e556141477e0fc97c973d328df3fa3e3346051e42a29",
+      "eeg_model2\\evaluation.py": "c9c3edbce23251b296fdf45e2aec53e69a70568bd169718e8a30163251da770f",
+      "eeg_model2\\features.py": "46d9fd83b0c20024b36c4da8c3694552022c05fee2e4ded2776c88671d44ec08",
+      "eeg_model2\\neural.py": "7658ab0589f8f409436dfed5e133cae3799cf8d0f83f2afdd52b1cd95af8a943",
+      "eeg_model2\\preprocess.py": "1cb94b79fb1f952b426bc12697cf6bf5fdd490ca941c1fedb34a43e9401f9f9e",
+      "eeg_model2\\report.py": "c2345203a1b4d51bc682c2bb08ebea67e430454b80f78ddbd910bc533281419e",
+      "eeg_model2\\response.py": "a356f1e47aeb34d23f408578d4bfbe352f72057472a1163f6ef8f811c2f94f14",
+      "eeg_model2\\shape.py": "315fa193afd89bf6cac98d640105ebc91ec80e9d73bb685b27d28b9b6b52c522",
+      "main.py": "95f2ff7020116d59df0368739d05c506cd01b3420f5a39a4472ddcdb34c97ede",
+      "predict.py": "cfe78eb304c667b8f4c0717d6c2f5578a90ca0979a76b2d5255830900abe271e"
+    },
+    "response_settings": [
+      [
+        0.1,
+        1.0,
+        "transient_contrast"
+      ],
+      [
+        0.1,
+        0.1,
+        "transient_contrast"
+      ],
+      [
+        0.1,
+        0.0,
+        "transient_contrast"
+      ],
+      [
+        0.01,
+        1.0,
+        "transient_contrast"
+      ],
+      [
+        0.01,
+        0.1,
+        "transient_contrast"
+      ],
+      [
+        0.01,
+        0.0,
+        "transient_contrast"
+      ],
+      [
+        0.001,
+        1.0,
+        "transient_contrast"
+      ],
+      [
+        0.001,
+        0.1,
+        "transient_contrast"
+      ],
+      [
+        0.001,
+        0.0,
+        "transient_contrast"
+      ],
+      [
+        0.0001,
+        1.0,
+        "transient_contrast"
+      ],
+      [
+        0.0001,
+        0.1,
+        "transient_contrast"
+      ],
+      [
+        0.0001,
+        0.0,
+        "transient_contrast"
+      ],
+      [
+        0.1,
+        1.0,
+        "legacy"
+      ],
+      [
+        0.1,
+        0.1,
+        "legacy"
+      ],
+      [
+        0.1,
+        0.0,
+        "legacy"
+      ],
+      [
+        0.01,
+        1.0,
+        "legacy"
+      ],
+      [
+        0.01,
+        0.1,
+        "legacy"
+      ],
+      [
+        0.01,
+        0.0,
+        "legacy"
+      ],
+      [
+        0.001,
+        1.0,
+        "legacy"
+      ],
+      [
+        0.001,
+        0.1,
+        "legacy"
+      ],
+      [
+        0.001,
+        0.0,
+        "legacy"
+      ],
+      [
+        0.0001,
+        1.0,
+        "legacy"
+      ],
+      [
+        0.0001,
+        0.1,
+        "legacy"
+      ],
+      [
+        0.0001,
+        0.0,
+        "legacy"
+      ]
+    ],
+    "feature_response_setting": [
+      0.01,
+      0.1,
+      "legacy"
+    ],
+    "primary_classifier": [
+      "temporal24",
+      "lr",
+      0.1
+    ],
+    "classification_protocols": {
+      "main": {
+        "scope": "record",
+        "family": "temporal24",
+        "estimator": "lr",
+        "weighted": false
+      },
+      "record_lda": {
+        "scope": "record",
+        "family": "temporal24",
+        "estimator": "lda",
+        "weighted": false
+      },
+      "pooled": {
+        "scope": "task",
+        "family": "temporal24",
+        "estimator": "lr",
+        "weighted": false
+      },
+      "qc_weighted": {
+        "scope": "record",
+        "family": "temporal24",
+        "estimator": "lr",
+        "weighted": true
+      },
+      "mechanistic": {
+        "scope": "record",
+        "family": "contrast25",
+        "estimator": "lr",
+        "weighted": false
+      },
+      "ecg_adjusted": {
+        "scope": "record",
+        "family": "ecg_adjusted",
+        "estimator": "lr",
+        "weighted": false
+      },
+      "qc_adjusted": {
+        "scope": "record",
+        "family": "qc_adjusted",
+        "estimator": "lr",
+        "weighted": false
+      },
+      "order_adjusted": {
+        "scope": "record",
+        "family": "order_adjusted",
+        "estimator": "lr",
+        "weighted": false
+      },
+      "all_adjusted": {
+        "scope": "record",
+        "family": "all_adjusted",
+        "estimator": "lr",
+        "weighted": false
+      },
+      "prestim_only": {
+        "scope": "record",
+        "family": "prestim_only",
+        "estimator": "lr",
+        "weighted": false
+      }
+    },
+    "schema_version": 2
+  },
+  "executable": "D:\\Anaconda\\annconda\\envs\\EEGModel\\python.exe",
+  "status": "complete",
+  "started_utc": "2026-09-25T08:38:43.342647+00:00",
+  "artifact_sha256": {
+    "oof_predictions.csv": "8e2c23ea60fde0e4f3033776884a3fb6c632274bbfab7bcd75ddcf0a8396bbb9",
+    "heldout_waveforms.npz": "418a2610bf5b24317bf00bd236370e09b1a43a892842dc67d7fdb1d4947fea7d",
+    "heldout_erp.npz": "180ce3f6b4bebd6355e2ad7fbe7ab7368da0e4b111488ea5a4d1ae5b32e31137",
+    "final_model.json": "d4b6fdf6695dcdcdf2713d0dc5da4f32845ad874bdcfe60f3e3d2bc1c5b7fc85",
+    "fitted_curves.npz": "7d2186dc965e00c9993684a2ec9a6ae5f146cd8400bff6134e74942b48243394",
+    "curve_fit_metrics.csv": "f4b3899dabb2a3623ecf9bfe6143ee28877274db07c69681191028de1ffe2e0d",
+    "erp_validation.csv": "dec45cb7327c2890e634b8a570566454ecc5b68368f5ae71a9c2ccbdaa752350",
+    "classifier_audit.json": "c92f74abb0bfce14525bd04e81855e2298de6d869c3bddbf9d3c1704652532b5",
+    "training_audit.json": "9fe7b271462ed91f98a4d6a0d64bcb75f28fa8eaf89bec5f59ac9a3a45f89286",
+    "response_parameters.json": "f30fbe1d72034daa021ed849863cdd6def49b4bf8efe2084f8dc8e7ce2ba3c93",
+    "confound_audit.json": "dbd985ad3d022a01ff8b7ad6543bde99d5ce72df468d99dc383467864b4556e3",
+    "trend_metrics.csv": "4d46fb9e1afcd4b482595ce79167e506e1187148e713ccbf6ed09bfdffde017e"
+  },
+  "completed_permutations": 200,
+  "completed_utc": "2026-09-25T08:38:52.645714+00:00"
+}

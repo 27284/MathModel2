@@ -4,7 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c90c64a-726e-4920-b1f8-86c1ff792916" name="更改" comment="" />
+    <list default="true" id="9c90c64a-726e-4920-b1f8-86c1ff792916" name="更改" comment="上传输出output">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eeg_model2/evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/eeg_model2/evaluation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eeg_model2/features.py" beforeDir="false" afterPath="$PROJECT_DIR$/eeg_model2/features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eeg_model2/report.py" beforeDir="false" afterPath="$PROJECT_DIR$/eeg_model2/report.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eeg_model2/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/eeg_model2/response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/classification_metrics.csv" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/classification_metrics.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/classifier_selection.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/curve_fit_metrics.csv" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/curve_fit_metrics.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/erp_validation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/erp_validation.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/figures/VisualCogA_Task-1_拟合与验证.png" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/figures/VisualCogA_Task-1_拟合与验证.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/figures/VisualCogA_Task-2_拟合与验证.png" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/figures/VisualCogA_Task-2_拟合与验证.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/figures/VisualCogB_Task-1_拟合与验证.png" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/figures/VisualCogB_Task-1_拟合与验证.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/figures/VisualCogB_Task-2_拟合与验证.png" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/figures/VisualCogB_Task-2_拟合与验证.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/figures/分类混淆矩阵.png" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/figures/分类混淆矩阵.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/figures/视觉编码.png" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/figures/视觉编码.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/final_model.json" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/final_model.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/fitted_curves.npz" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/fitted_curves.npz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/heldout_erp.npz" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/heldout_erp.npz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/heldout_waveforms.npz" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/heldout_waveforms.npz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/oof_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/oof_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/permutation_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/permutation_scores.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/permutation_test.json" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/permutation_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/response_parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/response_parameters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/run.log" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/run.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/training_audit.json" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/training_audit.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/waveform_metrics.csv" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/waveform_metrics.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/results/第二问结果报告.md" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/results/第二问结果报告.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/模型说明.md" beforeDir="false" afterPath="$PROJECT_DIR$/模型说明.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +47,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "27284"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/27284/MathModel2.git",
+    "accountId": "fc8fd7aa-d7bc-4734-9d82-fde7eac1879c"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -25,7 +71,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/pycharm/Math_Model2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -58,11 +104,24 @@
       <updated>1790234248381</updated>
       <workItem from="1790234250196" duration="1109000" />
       <workItem from="1790238073973" duration="1750000" />
-      <workItem from="1790304212635" duration="2467000" />
+      <workItem from="1790304212635" duration="8933000" />
     </task>
+    <task id="LOCAL-00001" summary="上传输出output">
+      <option name="closed" value="true" />
+      <created>1790308465227</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1790308465227</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="上传输出output" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传输出output" />
   </component>
 </project>

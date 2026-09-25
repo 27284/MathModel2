@@ -1,4 +1,4 @@
-"""保留时序幅值的24维特征，以及噪声白化的共同/差异匹配。"""
+"""固定逐记录分类主方案；对照不参与外层择优。"""
 import numpy as np
 from scipy.special import expit
 from sklearn.covariance import LedoitWolf
@@ -6,85 +6,84 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
-FAMILIES=('amplitude4','temporal24','contrast25')
-SETTINGS=tuple((family,'lr',c) for family in FAMILIES for c in (.01,.1,1.))+(('temporal24','lda',0.),)
+PRIMARY_SETTING = ('temporal24', 'lr', 0.1)
+SETTINGS = (PRIMARY_SETTING, ('temporal24', 'lda', 0.))
+PROTOCOLS = {
+    'main': dict(scope='record', family='temporal24', estimator='lr', weighted=False),
+    'record_lda': dict(scope='record', family='temporal24', estimator='lda', weighted=False),
+    'pooled': dict(scope='task', family='temporal24', estimator='lr', weighted=False),
+    'qc_weighted': dict(scope='record', family='temporal24', estimator='lr', weighted=True),
+    'mechanistic': dict(scope='record', family='contrast25', estimator='lr', weighted=False),
+    **{name: dict(scope='record', family=name, estimator='lr', weighted=False)
+       for name in ('ecg_adjusted', 'qc_adjusted', 'order_adjusted', 'all_adjusted', 'prestim_only')},
+}
 
 
-def four_features(x,t):
-    main=(t>=.25)&(t<=.5);early=(t>=.25)&(t<.4);late=(t>=.4)&(t<=.5)
-    a=x[...,main].mean(axis=-1)
-    return np.column_stack([a[:,0],a[:,1:].mean(axis=1),a[:,2]-a[:,1],
-                            x[:,0,late].mean(axis=-1)-x[:,0,early].mean(axis=-1)])
+def time_features(x, t):
+    """Fz的8个窗、F3的8个窗、F4的8个窗；100–500ms，左闭右开。"""
+    edges = np.linspace(.1, .5, 9)
+    return np.stack([x[..., (t >= a) & (t < b)].mean(axis=-1)
+                     for a, b in zip(edges[:-1], edges[1:])], axis=-1).reshape(len(x), 24)
 
 
-def time_features(x,t):
-    return np.stack([x[..., (t>=a)&(t<b)].mean(axis=-1)
-                     for a,b in zip(np.linspace(.1,.5,9)[:-1],np.linspace(.1,.5,9)[1:])],axis=-1).reshape(len(x),24)
+def build_features(records, prepared, labels, bank=None, model=None, cells=None):
+    """只为mechanistic对照构建监督匹配分；主方案直接使用原幅值24维。"""
+    variants = {'temporal24': [], 'contrast25': []}
+    transforms = []
+    for j, (r, p, y) in enumerate(zip(records, prepared, labels)):
+        x = time_features(r.light, r.t)
+        variants['temporal24'].append(x)
+        transform = dict(record=r.name, task=r.task,
+                         training_trials=np.flatnonzero(p.train).tolist())
+        if model is not None:
+            train, truth = x[p.train], y[p.train]
+            residual = train.copy()
+            for sign in (-1, 1):
+                residual[truth == sign] -= train[truth == sign].mean(axis=0)
+            covariance = LedoitWolf().fit(residual).covariance_
+            covariance += max(np.trace(covariance) / 24, 1e-12) * 1e-6 * np.eye(24)
+            duration = float(np.median(r.duration[p.train]))
+            template = time_features(model.predict(bank, j, [-1, 1], [duration] * 2), r.t)
+            m, d = template.mean(axis=0), (template[1] - template[0]) / 2
+            w = np.linalg.solve(covariance, d)
+            norm = float(np.sqrt(max(d @ w, 1e-12)))
+            w /= norm
+            variants['contrast25'].append(np.column_stack([x, (x - m) @ w]))
+            transform.update(template_common=m.tolist(), matched_weight=w.tolist(),
+                             mahalanobis_contrast=norm)
+        transforms.append(transform)
+    return variants, transforms
 
 
-def build_features(records,prepared,labels,bank,model,cells):
-    variants={name:[] for name in FAMILIES};transforms=[]
-    for j,(r,p,y) in enumerate(zip(records,prepared,labels)):
-        x=time_features(r.light,r.t)
-        train=x[p.train];truth=y[p.train]
-        center=train.mean(axis=0)
-        scale=np.maximum(train.std(axis=0),1e-6)
-        normalized=(x-center)/scale
-        # 类内残差只从训练Trial估计，留出标签不参与协方差/模板。
-        residual=train.copy()
-        for sign in (-1,1):residual[truth==sign]-=train[truth==sign].mean(axis=0)
-        covariance=LedoitWolf().fit(residual).covariance_
-        covariance+=max(np.trace(covariance)/24,1e-12)*1e-6*np.eye(24)
-        duration=float(np.median(r.duration[p.train]))
-        predicted=model.predict(bank,j,[-1,1],[duration]*2)
-        template=time_features(predicted,r.t)
-        m=template.mean(axis=0);d=(template[1]-template[0])/2
-        w=np.linalg.solve(covariance,d)
-        norm=float(np.sqrt(max(d@w,1e-12)))
-        w/=norm
-        score=(x-m)@w
-        variants['amplitude4'].append(four_features(r.light,r.t))
-        variants['temporal24'].append(normalized)
-        variants['contrast25'].append(np.column_stack([normalized,score]))
-        transforms.append(dict(record=r.name,task=r.task,center=center.tolist(),scale=scale.tolist(),
-                               template_common=m.tolist(),matched_weight=w.tolist(),
-                               mahalanobis_contrast=norm,training_trials=np.flatnonzero(p.train).tolist()))
-    return variants,transforms
+def apply_transform(epochs, t, transform, family):
+    x = time_features(epochs, t)
+    if family == 'temporal24':
+        return x
+    if family != 'contrast25':
+        raise ValueError('预测接口仅支持主方案或机理对照的脑电特征')
+    score = (x - np.asarray(transform['template_common'])) @ np.asarray(transform['matched_weight'])
+    return np.column_stack([x, score])
 
 
-def apply_transform(epochs,t,transform,family):
-    if family=='amplitude4':return four_features(epochs,t)
-    x=time_features(epochs,t)
-    z=(x-np.asarray(transform['center']))/np.asarray(transform['scale'])
-    if family=='temporal24':return z
-    score=(x-np.asarray(transform['template_common']))@np.asarray(transform['matched_weight'])
-    return np.column_stack([z,score])
+def fit_classifier(x, y, w=None, setting=PRIMARY_SETTING, weighted=False):
+    family, kind, c = setting
+    weight = None if not weighted else np.asarray(w, float) / np.mean(w)
+    scaler = StandardScaler().fit(x, sample_weight=weight)
+    xx = scaler.transform(x)
+    if kind == 'lr':
+        clf = LogisticRegression(C=c, class_weight='balanced', max_iter=2000).fit(xx, y, sample_weight=weight)
+    elif kind == 'lda':
+        if weighted:
+            raise ValueError('LDA对照不接受QC样本权重')
+        clf = LinearDiscriminantAnalysis(solver='lsqr', shrinkage='auto', priors=[.5, .5]).fit(xx, y)
+    else:
+        raise ValueError('未知分类器')
+    return dict(family=family, estimator=kind, C=c, qc_weighted=weighted,
+                mean=scaler.mean_.tolist(), scale=scaler.scale_.tolist(),
+                coefficients=clf.coef_[0].tolist(), intercept=float(clf.intercept_[0]))
 
 
-def concatenate(records,prepared,labels,features,task,blocks=None):
-    xs=[];ys=[];ws=[];indices=[]
-    for j,(r,p,y,x) in enumerate(zip(records,prepared,labels,features)):
-        if r.task!=task:continue
-        mask=p.train if blocks is None else np.isin(r.folds,list(blocks))&r.valid
-        ix=np.flatnonzero(mask)
-        xs.append(x[ix]);ys.append(y[ix]);ws.append(p.weights[ix].mean(axis=1))
-        indices.extend((j,int(i)) for i in ix)
-    return np.concatenate(xs),np.concatenate(ys),np.concatenate(ws),indices
-
-
-def fit_classifier(x,y,w,setting):
-    family,kind,c=setting
-    scaler=StandardScaler().fit(x,sample_weight=w/w.mean())
-    xx=scaler.transform(x)
-    if kind=='lr':
-        clf=LogisticRegression(C=c,class_weight='balanced',max_iter=2000).fit(xx,y,sample_weight=w/w.mean())
-    else:clf=LinearDiscriminantAnalysis(solver='lsqr',shrinkage='auto',priors=[.5,.5]).fit(xx,y)
-    return dict(family=family,estimator=kind,C=c,mean=scaler.mean_.tolist(),scale=scaler.scale_.tolist(),
-                coefficients=clf.coef_[0].tolist(),intercept=float(clf.intercept_[0]),
-                note='LDA不使用样本权重；LR使用QC及类别平衡')
-
-
-def classify(model,x):
-    xx=(x-np.asarray(model['mean']))/np.asarray(model['scale'])
-    probability=expit(xx@np.asarray(model['coefficients'])+model['intercept'])
-    return np.where(probability>=.5,1,-1),probability
+def classify(model, x):
+    xx = (x - np.asarray(model['mean'])) / np.asarray(model['scale'])
+    probability = expit(xx @ np.asarray(model['coefficients']) + model['intercept'])
+    return np.where(probability >= .5, 1, -1), probability
