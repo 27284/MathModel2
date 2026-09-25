@@ -24,7 +24,7 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('npz',type=Path,help='epochs键：已轻处理、基线校正的N×3×257数组')
     parser.add_argument('--record',required=True)
-    parser.add_argument('--model',type=Path,default=Path(__file__).parent/'outputs/results/final_model.json')
+    parser.add_argument('--model',type=Path,default=Path(__file__).parent/'outputs/results_v3/final_model.json')
     parser.add_argument('--output',type=Path,default=Path('predictions.csv'))
     a=parser.parse_args();import pandas as pd
     labels,probability,_=predict(np.load(a.npz)['epochs'],json.loads(a.model.read_text(encoding='utf-8')),a.record)

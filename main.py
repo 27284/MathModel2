@@ -26,10 +26,17 @@ ROOT=Path(__file__).resolve().parent
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--data',type=Path,default=ROOT/'data')
-    parser.add_argument('--output',type=Path,default=ROOT/'outputs/results')
+    parser.add_argument('--version',choices=('v2','v3'),default='v3')
+    parser.add_argument('--output',type=Path,default=None)
     parser.add_argument('--permutations',type=int,default=200)
+    parser.add_argument('--ecg-permutations',type=int,default=200,help='V3 ECG敏感性独立置换次数')
     args=parser.parse_args()
-    if args.permutations<0:raise ValueError('置换次数不可为负')
+    if args.permutations<0 or args.ecg_permutations<0:raise ValueError('置换次数不可为负')
+    if args.output is None:
+        args.output=ROOT/('outputs/results_v3' if args.version=='v3' else 'outputs/results_v2_recompute')
+    if args.version=='v3':
+        from eeg_model2.pipeline_v3 import run_v3
+        return run_v3(ROOT,args)
     out=args.output.resolve();out.mkdir(parents=True,exist_ok=True)
     logging.basicConfig(level=logging.INFO,format='%(asctime)s %(message)s',handlers=[logging.StreamHandler(),logging.FileHandler(out/'run.log',encoding='utf-8')])
     cfg=Config();records=load_records(args.data,cfg);labels=[r.labels.copy() for r in records]

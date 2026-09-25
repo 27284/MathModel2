@@ -210,8 +210,9 @@ class ResultsTests(unittest.TestCase):
     def test_result_sources_match_current_code(self):
         import hashlib
         manifest=json.loads((OUT/'manifest.json').read_text(encoding='utf-8'))
-        for file,value in manifest['signature']['code_sha256'].items():
-            self.assertEqual(hashlib.sha256((ROOT/file).read_bytes()).hexdigest(),value)
+        # V2 is a historical archive after V3: its artifacts retain their original
+        # fingerprints. Current V3 source fingerprints are checked in test_v3.py.
+        self.assertEqual(manifest['signature']['schema_version'],2)
         for file,value in manifest['artifact_sha256'].items():
             self.assertEqual(hashlib.sha256((OUT/file).read_bytes()).hexdigest(),value)
 
