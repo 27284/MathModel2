@@ -1,0 +1,972 @@
+[
+  {
+    "fold": 0,
+    "task": 1,
+    "training_blocks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "setting": [
+      "amplitude4",
+      "lr",
+      0.1
+    ],
+    "candidates": [
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5593406593406594
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5824175824175823
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.5598901098901099
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.560989010989011
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5087912087912088
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.4653846153846154
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5450549450549451
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5164835164835164
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.4945054945054945
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lda",
+          0.0
+        ],
+        "inner_ba": 0.4950549450549451
+      }
+    ]
+  },
+  {
+    "fold": 0,
+    "task": 2,
+    "training_blocks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "setting": [
+      "contrast25",
+      "lr",
+      1.0
+    ],
+    "candidates": [
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.48891710921265297
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.4677903486492727
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.447818055876241
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.47956592011082894
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.520549526668206
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.5169706765181252
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.520549526668206
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5510274763334103
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.5826598937889633
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lda",
+          0.0
+        ],
+        "inner_ba": 0.5310551835603787
+      }
+    ]
+  },
+  {
+    "fold": 1,
+    "task": 1,
+    "training_blocks": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "setting": [
+      "temporal24",
+      "lr",
+      0.01
+    ],
+    "candidates": [
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5084360804672291
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.49307808782176077
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.47815271468743237
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5591607181483885
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.500540774388925
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.46409258057538394
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5444516547696301
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5299589011464417
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.5003244646333549
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lda",
+          0.0
+        ],
+        "inner_ba": 0.47966688297642224
+      }
+    ]
+  },
+  {
+    "fold": 1,
+    "task": 2,
+    "training_blocks": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "setting": [
+      "amplitude4",
+      "lr",
+      0.01
+    ],
+    "candidates": [
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5830304407087687
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.562925942753294
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.5508859609268515
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.530667878237165
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5246478873239437
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.5337346660608814
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5226033621081326
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5064743298500681
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.4994320763289414
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lda",
+          0.0
+        ],
+        "inner_ba": 0.5790549750113585
+      }
+    ]
+  },
+  {
+    "fold": 2,
+    "task": 1,
+    "training_blocks": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "setting": [
+      "temporal24",
+      "lr",
+      1.0
+    ],
+    "candidates": [
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.48947132616487454
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5253136200716846
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.4930555555555556
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5264336917562724
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.546146953405018
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.558915770609319
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.519489247311828
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5439068100358423
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.512768817204301
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lda",
+          0.0
+        ],
+        "inner_ba": 0.5288978494623655
+      }
+    ]
+  },
+  {
+    "fold": 2,
+    "task": 2,
+    "training_blocks": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "setting": [
+      "amplitude4",
+      "lr",
+      0.01
+    ],
+    "candidates": [
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5355362946912243
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5278439869989167
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.48429035752979416
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5278439869989167
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5067172264355363
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.47150595882990254
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5201516793066089
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.47659804983748644
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.4785482123510293
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lda",
+          0.0
+        ],
+        "inner_ba": 0.5157096424702059
+      }
+    ]
+  },
+  {
+    "fold": 3,
+    "task": 1,
+    "training_blocks": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "setting": [
+      "temporal24",
+      "lr",
+      0.01
+    ],
+    "candidates": [
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.4784873188405797
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.4773550724637681
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.4929800724637681
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5537817028985508
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5303442028985508
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.4723731884057971
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5230978260869565
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.4578804347826087
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.4271965579710145
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lda",
+          0.0
+        ],
+        "inner_ba": 0.48686594202898553
+      }
+    ]
+  },
+  {
+    "fold": 3,
+    "task": 2,
+    "training_blocks": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "setting": [
+      "amplitude4",
+      "lr",
+      1.0
+    ],
+    "candidates": [
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5022175536881419
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5186741363211951
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.5736461251167133
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.49428104575163395
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5101540616246498
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.5113211951447245
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.4875116713352007
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.4745564892623716
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.4977824463118581
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lda",
+          0.0
+        ],
+        "inner_ba": 0.516923436041083
+      }
+    ]
+  },
+  {
+    "fold": 4,
+    "task": 1,
+    "training_blocks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "setting": [
+      "contrast25",
+      "lr",
+      0.1
+    ],
+    "candidates": [
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.4986607142857143
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.4752232142857143
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.5064732142857142
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5546875
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5488839285714285
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.4486607142857143
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5254464285714285
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.5560267857142858
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.5169642857142858
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lda",
+          0.0
+        ],
+        "inner_ba": 0.4830357142857143
+      }
+    ]
+  },
+  {
+    "fold": 4,
+    "task": 2,
+    "training_blocks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "setting": [
+      "contrast25",
+      "lr",
+      0.01
+    ],
+    "candidates": [
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.4931623931623932
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.49242979242979246
+      },
+      {
+        "setting": [
+          "amplitude4",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.48424908424908425
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.49291819291819294
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.43785103785103785
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.42991452991452994
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.01
+        ],
+        "inner_ba": 0.5006105006105006
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          0.1
+        ],
+        "inner_ba": 0.49242979242979246
+      },
+      {
+        "setting": [
+          "contrast25",
+          "lr",
+          1.0
+        ],
+        "inner_ba": 0.4763125763125763
+      },
+      {
+        "setting": [
+          "temporal24",
+          "lda",
+          0.0
+        ],
+        "inner_ba": 0.46886446886446886
+      }
+    ]
+  }
+]

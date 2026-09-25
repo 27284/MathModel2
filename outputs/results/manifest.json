@@ -1,0 +1,160 @@
+{
+  "signature": {
+    "config": {
+      "seed": 20260925,
+      "fs": 256,
+      "folds": 5,
+      "pre": 0.2,
+      "post": 0.8,
+      "padding": 1.0,
+      "clip_level": 999.9,
+      "lowpass": 30.0,
+      "filter_order": 4,
+      "min_weight": 0.05,
+      "huber_c": 1.345,
+      "source_rho": 0.6,
+      "synaptic_tau": 0.02,
+      "bootstrap": 1000
+    },
+    "python": "3.11.16 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:36:16) [MSC v.1942 64 bit (AMD64)]",
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.1",
+      "matplotlib": "3.10.8",
+      "scikit-learn": "1.9.1",
+      "numba": "0.67.0"
+    },
+    "data_sha256": {
+      "VisualCogA_Task-1": "02a8167b243815c3d048763528641f002eeef3b3903a31ea130b1f4e0cfc6b33",
+      "VisualCogA_Task-2": "c120ef16ed6bd1a2f1e86e0ab030c6306d08e555a71359cf455744a9904cb748",
+      "VisualCogB_Task-1": "e6fb2684bddeed0f43e541a52928ce73c690a9b1f91e23a6404e0537f0ef0fc9",
+      "VisualCogB_Task-2": "c58c998880682027119548029ba92240604b9ecf4138e6c4ea3efe4522212e9d"
+    },
+    "code_sha256": {
+      "eeg_model2\\__init__.py": "daabe12b0da6f11ff44437f3635116d16a196b9d0fb706f0242f0abc29d1c7f8",
+      "eeg_model2\\config.py": "41c81bd3525f87951c62e4434ac0eb09b7f572123d36cfa236a495f4e5431fb2",
+      "eeg_model2\\data.py": "337cfba40349cee0a068ca3d2ec15b5fb61f1a71026c84b5b596bfc67fe5c0aa",
+      "eeg_model2\\evaluation.py": "a6af6daa2c860531bda2274c281dfd4cf2c95d9827e4fc31202a79df75b764c5",
+      "eeg_model2\\features.py": "a419a5e0c7e4bc61a3cbf815b7aea0f7608478b7f8b3bbbd4408bbebcd17b26e",
+      "eeg_model2\\neural.py": "7658ab0589f8f409436dfed5e133cae3799cf8d0f83f2afdd52b1cd95af8a943",
+      "eeg_model2\\preprocess.py": "1cb94b79fb1f952b426bc12697cf6bf5fdd490ca941c1fedb34a43e9401f9f9e",
+      "eeg_model2\\report.py": "adf386538b0a34b6075b48a4670d28300966fa12249ca85d6655a30f88b222b6",
+      "eeg_model2\\response.py": "f9dddcbf022e048ca6a1d014a944ef66b25b5479be0c388fd0af35c9e7f84bd0",
+      "eeg_model2\\shape.py": "315fa193afd89bf6cac98d640105ebc91ec80e9d73bb685b27d28b9b6b52c522",
+      "main.py": "a80dca417ecada7f8b0369dded64866aec94f0599f22e7b52cf301ae1339ad3e",
+      "predict.py": "5645f2437ce02676485861c042b72e98454f00d6cc18bc9a403b39e65a6087ca"
+    },
+    "response_settings": [
+      [
+        0.1,
+        1.0
+      ],
+      [
+        0.1,
+        0.1
+      ],
+      [
+        0.1,
+        0.0
+      ],
+      [
+        0.01,
+        1.0
+      ],
+      [
+        0.01,
+        0.1
+      ],
+      [
+        0.01,
+        0.0
+      ],
+      [
+        0.001,
+        1.0
+      ],
+      [
+        0.001,
+        0.1
+      ],
+      [
+        0.001,
+        0.0
+      ],
+      [
+        0.0001,
+        1.0
+      ],
+      [
+        0.0001,
+        0.1
+      ],
+      [
+        0.0001,
+        0.0
+      ]
+    ],
+    "feature_response_setting": [
+      0.01,
+      0.1
+    ],
+    "classifiers": [
+      [
+        "amplitude4",
+        "lr",
+        0.01
+      ],
+      [
+        "amplitude4",
+        "lr",
+        0.1
+      ],
+      [
+        "amplitude4",
+        "lr",
+        1.0
+      ],
+      [
+        "temporal24",
+        "lr",
+        0.01
+      ],
+      [
+        "temporal24",
+        "lr",
+        0.1
+      ],
+      [
+        "temporal24",
+        "lr",
+        1.0
+      ],
+      [
+        "contrast25",
+        "lr",
+        0.01
+      ],
+      [
+        "contrast25",
+        "lr",
+        0.1
+      ],
+      [
+        "contrast25",
+        "lr",
+        1.0
+      ],
+      [
+        "temporal24",
+        "lda",
+        0.0
+      ]
+    ]
+  },
+  "executable": "D:\\Anaconda\\annconda\\envs\\EEGModel\\python.exe",
+  "status": "complete",
+  "started_utc": "2026-09-25T03:24:16.446254+00:00",
+  "completed_permutations": 19,
+  "completed_utc": "2026-09-25T03:24:21.822178+00:00"
+}

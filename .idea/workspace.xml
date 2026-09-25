@@ -13,6 +13,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "27284"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/27284/MathModel2.git",
+    "accountId": "fc8fd7aa-d7bc-4734-9d82-fde7eac1879c"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -25,7 +37,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/pycharm/Math_Model2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -58,7 +70,7 @@
       <updated>1790234248381</updated>
       <workItem from="1790234250196" duration="1109000" />
       <workItem from="1790238073973" duration="1750000" />
-      <workItem from="1790304212635" duration="2467000" />
+      <workItem from="1790304212635" duration="3278000" />
     </task>
     <servers />
   </component>
