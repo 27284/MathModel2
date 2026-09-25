@@ -1,0 +1,610 @@
+[
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果.zip",
+    "Hash": "48924B3ACD369C7B80DB771C284B224BA3E5FB5888271BC95D0C1E9BBA97DC86"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\build_layered_report.py",
+    "Hash": "8D97B0B75EA06A9A1CCEFE4950FD3521629172767EFB604FA7E4D6140DFDF9DC"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\evaluate_problem1_curve.m",
+    "Hash": "ACC48BEC536CB42B127FC703AAE0BFBD97AA0B47A182C03D703CA658B0AF19A5"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\problem1_config.m",
+    "Hash": "C2944B123B0C71EE091BA0ABB1237642F6EA056ABA883A043929D4DC0508B0DC"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\README.md",
+    "Hash": "99A2E3FAD50A7F45B26295C8DAF3A5346FF493E3B6465733AD5C76290FBE3E8E"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\redraw_problem1.m",
+    "Hash": "57642F67E3A2BD80BC37457DE31D9F8FD16E2ABD619E4E44C0316ABD80FABED8"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\run_problem1.m",
+    "Hash": "433255CCA83820F81A96D9C5EC90E296FA26E5D202551F1F5E1EA322B0A096EF"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\audit.m",
+    "Hash": "854DFD24422607D80028A62292A46CDB4DB23C50EDE8BF3B893FD7DE20845AC2"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\basis.m",
+    "Hash": "31C0CC548D072ED204C5F59052D7594CC30DFFAF3DE798D99E3D1D8B0C0B75BF"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\detect_events.m",
+    "Hash": "A8F71FA50FA33FAB2C10BD4BB0963FCEC494161A8513077127501E16B4870891"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\export.m",
+    "Hash": "9A4ACB7335506CA39E77B1982DE417DAE9D946070F805A085010AE6E10204378"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\fit_curve.m",
+    "Hash": "4A08F7C69555DCE86AFBAD1AD6E7912897ECC0AA0519BEEFBA4614847840334A"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\lowdim.m",
+    "Hash": "4EEEF9C2CA5D34AE3E561CFC5062A23ADF198F969D7BB28769F3B1B087895E95"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\prepare.m",
+    "Hash": "E168F78C0DF57C1FF9A70B27AD7D69450B1F16CBA7C9C835577FF8B8456BF1A3"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\prestim_qc.m",
+    "Hash": "C072B560F8852C3BC762404C1D4C5E3506AC634FEF3503A34FA96CDF49EBB31B"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\process.m",
+    "Hash": "6267D02156D15DBD03754226B1E1C5009A39B10784B4B51F9B6D354C21E62618"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\qc_huber.m",
+    "Hash": "6BAD81E2FA60F0F9B74FB54E99CC6A77CFB0889F514329C4C4BBAE33906D9131"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\qc_weights.m",
+    "Hash": "21B3DF9DA7000D4DF36ECAA9064C141B27CC578356881EFFC1CDBA237C34E6CF"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\render_figures.m",
+    "Hash": "B9264BD1B564C1CEC2A00B6965A4B933E4F12296E8C12E9189AED1FBC306ECE8"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\report.m",
+    "Hash": "9373F139BC9F47753E42F6AA75A8B97C50EF84FF0131ED39F0ECD74A1130996F"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\spatial.m",
+    "Hash": "43020CBB9C77A1EC2FAF18A8F69654577976534F7E9AA03AC42503B618D07370"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\uncertainty.m",
+    "Hash": "11339E5015BA1E25712F4A7CD6E64386FA7C1B17682793679F8085CB599A45DC"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\validate.m",
+    "Hash": "A58A8EB22F7E38EF70B0AE376F4B106015D3994D36F5D44FD933C11F6D098856"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\+q1\\weighted_mean.m",
+    "Hash": "0DA3B643D8375973002320B17889B15E23C74ED65DC464D09FCD004E2300CBEB"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果.zip",
+    "Hash": "C586B8BD8796F08A362990BCCD94DCB9AF4F70109E88DCAAAA7D0DAB0FD9953E"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\build_layered_report.py",
+    "Hash": "E6D3AF62EC003D4419959D2B963E7BADAF1F5417D60B49074744F2B20AD50B73"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\cleanup_manifest.json",
+    "Hash": "D5A842040B46B5EAD7A16414AC4AB5B9880785A2C757EDBC7A602DD1026EDBBF"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\diagnose_late_response.m",
+    "Hash": "3A845EFD695B704B1A42C1078C81CD98A2EDC72F44B1FACCE25E3E710A1B416B"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\diagnose_long_window.m",
+    "Hash": "B1CDC80428E341E813A8E62EE660955FB26881C3BD2737C85822BF47057701DE"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\evaluate_problem1_curve.m",
+    "Hash": "25BBA3D71C6007765EE101B70EBDBF1BE199BCEE2795D356B0A5A5E9A5A5DF43"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\export_problem1_deliverables.m",
+    "Hash": "1C27F4EDB4725566BE6E0AED51B8D5EAC9A4C7678D148CF48D843E8AB6A4E55C"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\layered_config.m",
+    "Hash": "6CF29B3C5BB8D7022C2D2F467FC8AB1780837DB1D926E39CA0531EA1F5FBF85D"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\presentation_validation.log",
+    "Hash": "870A9CD6156BD1918DBA75DC325ABC8466BE11525385C7198293DC762A15381F"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\qc_huber_validation.log",
+    "Hash": "A04A57D9CAD334FF65E261C4F2A6934297F34F9544ED67CD2637789F6BF63F3B"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\quantify_ssp_effect.m",
+    "Hash": "7455EE69A649AFC7934FAC669DD57A933F4F81C6E0082D53443F6E62AED589E2"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\README.md",
+    "Hash": "4DC09993ED8B8178FEAFD35604BBE14274EDF7F52675443039195B674F561A43"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\run_problem1_complete.m",
+    "Hash": "CC9CCCAF8426BE987F6F357B0106A5CD300C2469DA5F5932EA7DCF90DEED7E12"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\run_problem1_layered.m",
+    "Hash": "0CF1730B2DE8C75A2FF2137E27D01C122216FC8420C7E4B470C5B9EC3EA31042"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\test_layered.m",
+    "Hash": "38EBE5920145EF1A85604D30DEF8945C2EEBFA5850073EAB91C6C3DE5D799D10"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\test_qc_huber.m",
+    "Hash": "108DC75D85C5C1E3002EC931997C14C78C314B137D029CEE5E1A66423C4F412E"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\basis.m",
+    "Hash": "31C0CC548D072ED204C5F59052D7594CC30DFFAF3DE798D99E3D1D8B0C0B75BF"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\decompose.m",
+    "Hash": "E559EA447E1D5C555FF4FD2F73B13449C850109885AA3F93338D514D2E068A1C"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\detect_events.m",
+    "Hash": "A8F71FA50FA33FAB2C10BD4BB0963FCEC494161A8513077127501E16B4870891"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\export_tables.m",
+    "Hash": "AD1F6C206559C8898B58746F53E8A033BC3A4F54BC0FE4D4928451E71C158D0B"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\fit_curve.m",
+    "Hash": "C426004CE51AF2D6FEF32969852C9E45940FD410C8AAEDBD78782529181131D8"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\lowdim.m",
+    "Hash": "7CACBB85E38021926A1DF5B3E7688B13CCDFBFD11B38E9CB41350FC6EF2A40C8"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\prepare.m",
+    "Hash": "16448860BA41B85D00C6629DFE17A4722D51535DACC561A11F67C132285259B6"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\presentation_parameters.m",
+    "Hash": "B9511B613AE55F412F83EA24E3CF0C096BC95167405D496C2AFE6C956D1CB457"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\presentation_plot.m",
+    "Hash": "FA379408F99AF21D91ECB991EBC190C122A204A068F9C96C164317DF63548C0D"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\presentation_stats.m",
+    "Hash": "73DCE8987DBE47395A6E5DE9DF79B84976684849C0BC64E0BD0C58C1D45E5F88"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\prestim_qc.m",
+    "Hash": "C072B560F8852C3BC762404C1D4C5E3506AC634FEF3503A34FA96CDF49EBB31B"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\process_file.m",
+    "Hash": "F70176E43EF92DD13275E4BB3BF1E16C1DC37CB05D81B972884E0E697140E5FE"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\qc_huber.m",
+    "Hash": "6BAD81E2FA60F0F9B74FB54E99CC6A77CFB0889F514329C4C4BBAE33906D9131"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\qc_weights.m",
+    "Hash": "21B3DF9DA7000D4DF36ECAA9064C141B27CC578356881EFFC1CDBA237C34E6CF"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\select_modes.m",
+    "Hash": "04E8C25F5D5B3246A06C959092A16343A4C36C128014556973D91A3B683B038D"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\+layered\\weighted_mean.m",
+    "Hash": "0DA3B643D8375973002320B17889B15E23C74ED65DC464D09FCD004E2300CBEB"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\第一问_QC_Huber方案与结果.md",
+    "Hash": "B81FB6CB8462E33BF9A0AA3F0A559CBDB746A11F8B486B6C34043A6B1BEF7EA9"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\已知波形保留检查.csv",
+    "Hash": "EE4F8825FB1B3870B11A8E9A4650BCC38BFEB7A1AD30FD1795D01716E621C7C3"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\analytic_curve_coefficients.csv",
+    "Hash": "BB965612D36CFC7DC4FC46BCCB490056334B1AD3D38B135756E414B695125EE9"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\conditional_block_CI.csv",
+    "Hash": "FB9FD6CA8F30E696AAAF8CEAFC2C4AD345714AC6157AE7504B666A6F647CE5E5"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\curve_parameters.csv",
+    "Hash": "AF23D894F9A55A2DA97CDA7E084C21664C18E65B26FA693256D9A09679DC4BB2"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\huber_diagnostics.csv",
+    "Hash": "B4E8BF300ED4A9EE52CA85A7AFFDCB4453271D181CD36740A505C47B72763129"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\huber_sensitivity.csv",
+    "Hash": "12F2F6017670A226ED06C72EB6E7434B9AB56981386C6583131720F9F8124DCE"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\late_fit_error.csv",
+    "Hash": "2D8802E2164ED80DD41E809042913B0AA8C18A57E064F4BBDFD697E1A3AB895F"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\late_window_comparison.csv",
+    "Hash": "020F06F5301EA3CF8A82D766F024B8223484E9D46285A267227EFA42199817CF"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\mode_decisions.csv",
+    "Hash": "E3E972C249C1E4919216C4BA3BBC96B1F2D3E07427D958F1A47B39A7650C83B4"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\quality_weights.csv",
+    "Hash": "C7544864DB57C48B87DB536506B69C616F8EFE4C956E56756E6C8188A9CBFF54"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\source_sha256.json",
+    "Hash": "EF9240628D3C1261B07E8329BD8D147D417C825E1BBBE6FDD951D8C4DB11F385"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\stage_metrics.csv",
+    "Hash": "5FFE82A8271A9D0FE8613AA0C8488B3610D10464109BEB26DC3366A69260424F"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\VisualCogA_Task-1_layered.mat",
+    "Hash": "9D97105214950D163781F98FC6202317C8DDB5F81AA18E22991E76C7456C8B67"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\VisualCogA_Task-2_layered.mat",
+    "Hash": "FEF52F927F0D70A9F3033AE07B992E08CA57F9D9C9047A09862126828034BC09"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\VisualCogB_Task-1_layered.mat",
+    "Hash": "0DB54EF97C84F019E30C742F506E974585DD75FAA17EE82C23633AB0CB4D8B4A"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\ProccesdData\\layered_qc_huber\\VisualCogB_Task-2_layered.mat",
+    "Hash": "7F2CA84EBDE6A00397F0C36F0B4E92191BE68C13B9E708EDD5AEEFE152B97C91"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\结果说明.md",
+    "Hash": "1C0C9E65A626A442599FD71C612EECF258AA7B9F5B03336431376A5C43606B97"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目1\\图片\\01_最终处理效果_全时段.png",
+    "Hash": "4AF7326EBB2BEA467332470F2D790E73BCDB091358F812A8F794B9D889E2BF95"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目1\\图片\\02_最终响应_250-500ms.png",
+    "Hash": "BEF03DE968AEC7E5D8E95B2E384A1C111587199BBC5586EB55CCDDA3CC5DDFD1"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目1\\图片\\03_左右差值_全时段.png",
+    "Hash": "5B82447009C9493392AD2DE505E4623CE85F03C70BECAFFAF0C056C92DCC9A50"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目1\\图片\\04_左右差值_250-500ms.png",
+    "Hash": "4924324FFB34E8896B1A35E2957E9F522F5A2E29881A35CFA6B7959C2B68992D"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目1\\图片\\05_处理前后对照.png",
+    "Hash": "5FB6F84D471AEBD45FEBBC608CD3000322C9E47EF4A4D810E664686FFF77904A"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目1\\数据\\250-500ms_左右响应与差值.csv",
+    "Hash": "A8030D7223EA177BF606B12349422F64E97358F12FCC151406D31D39C3281CAA"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目1\\数据\\参数拟合系数.csv",
+    "Hash": "8BFA94694DAF363ACA166BB6B16C8585E45F46D0E21575834F754A71F1786B06"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目1\\数据\\窗口均值_左右差异与区间.csv",
+    "Hash": "C355F66E7449F4AA2F10A984B3E420A4C60BB28D9DF272CFED5C4CF3252936E3"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目1\\数据\\全时段_左右响应与差值.csv",
+    "Hash": "6B3FC4F40F42E9FE28570DCC7EB99F5B71B2385191CD0CA2C550423BFB22451C"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目1\\数据\\完整解析曲线系数.csv",
+    "Hash": "3D57E212EEDCD88E29DC3FE225D51F40F074CF0EF5B911D912FD5C24ACA2FA92"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目1\\数据\\左右响应与差异统计.mat",
+    "Hash": "401D04063B5CF91FA03D36490B31E85E4F342B4E3DE00837C6BE7BC04FA3638F"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目2\\图片\\01_最终处理效果_全时段.png",
+    "Hash": "9BF1CB8EEF39C03884DDA31907BC633B1247666DC329915D8751758919257D53"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目2\\图片\\02_最终响应_250-500ms.png",
+    "Hash": "964FBD4CD8ADC6C26FC381D9C67333C4EF1160AEBF3C99CB9C4F2047A17F0013"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目2\\图片\\03_左右差值_全时段.png",
+    "Hash": "6AF31944D5CBF9B5BF31D92DC6D1B640448C76783AAE20B7C242658AEBCE2413"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目2\\图片\\04_左右差值_250-500ms.png",
+    "Hash": "0F252D2D55F26218221DCDEEBFD19F07F1EA522A75BB8FA7084A19024625B798"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目2\\图片\\05_处理前后对照.png",
+    "Hash": "BFB20FBEB0D7DA06488958FE27132E136FD865D7C717C90816322BF0248FA6DE"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目2\\数据\\250-500ms_左右响应与差值.csv",
+    "Hash": "9C9E2C7685DCED43FC18677287FCEE13E552C294F0CA1960505DA3BA4F4620DC"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目2\\数据\\参数拟合系数.csv",
+    "Hash": "277E8836E69911137584EC5E45FE906B8E71E47CD861E7A4B097B6796C9B9DD8"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目2\\数据\\窗口均值_左右差异与区间.csv",
+    "Hash": "F57564902C8CC9CEF9A51D5C2FC768906D47B77ED04ED56E95F8F1E3EDA24896"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目2\\数据\\全时段_左右响应与差值.csv",
+    "Hash": "D21328C49597FEDE65F7AE0EE931BB028E781E86B72F7C5E824897F5B66CBD19"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目2\\数据\\完整解析曲线系数.csv",
+    "Hash": "0FBE6C8ABC9BA3CABB4BD00B007DA04184182F159D79008328D744D5BAA650BA"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\matlab\\第一问结果\\实验项目2\\数据\\左右响应与差异统计.mat",
+    "Hash": "C0F035A77FA75F4C889C561656115B5299F32D120E1FC1C302A93BC303EBBF0C"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\第一问结果与方法说明.md",
+    "Hash": "EEA763ACA2FE52D9E34297076E50939AC2693E4C15A72AD4A583FEEEBD985A19"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\独立复核.json",
+    "Hash": "652019EA5B0A1489F029F1D26AF3C45605F8DCBE6599527C2C5F8F1E3D8F7049"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\启动记录.txt",
+    "Hash": "B9899FC02B38DCECBDE26F6EF548CCB7E0841027A3B1E2B25FE270ACB8246179"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\清理清单.json",
+    "Hash": "110F1437BF3ECB1F89EECED7C0DB097D424B8A4F7F1FB2023D6EE60375287003"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\数据图.zip",
+    "Hash": "7D85187F4B740B9EBB8ECCA822D6A39BF22158372394207285FE6667B6F5D9A2"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\运行记录.txt",
+    "Hash": "C194515B34A1E9B83C791A54241B95AEB13B87ECB62B18B66AF1F64CD94F70DB"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\完整数据\\VisualCogA_Task-1.mat",
+    "Hash": "93F948FBD783E679F2ABEA37DCC860BC9CEE06CA805ACA642463F45E95D461E8"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\完整数据\\VisualCogA_Task-2.mat",
+    "Hash": "ABC5E0A3C2552F18245A8271A12F4E5683120629E440EE0903F188192AF5B3D0"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\完整数据\\VisualCogB_Task-1.mat",
+    "Hash": "73E85F2DF118CFE61ED3BFFA9485597B8EFA3B64DD890E12930666A6CB194A0B"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\完整数据\\VisualCogB_Task-2.mat",
+    "Hash": "758887433A004A1A4D60B40C275BDE33A3372DC07AD31086289BE8DE8A15988A"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目1\\图片\\01_最终ERP与拟合.png",
+    "Hash": "858EADFB5576B0E3619A7656C64B284B4E048C671426BE38366E92C2C80F677C"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目1\\图片\\02_250-500ms左右响应.png",
+    "Hash": "D621DE3FE0E06F2F6B0CC0E54A264A01106852637DF73429D9E8003084F7187D"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目1\\图片\\03_全时段左右差值.png",
+    "Hash": "DB2CC7D49AE996ECB075F011EA1423F91828490544E1D79C7AF3527E1FC25FCD"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目1\\图片\\04_250-500ms左右差值.png",
+    "Hash": "015C122A4FDA54C4A6E2632B8F1D3CDF939A887824F02BC7C9E65AB42A5C267C"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目1\\图片\\05_处理步骤对照.png",
+    "Hash": "A184BCEB71A5B55BF4DFE625E311C13D1DDABF320A1A8BDA36BE16F69683D204"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目1\\图片\\06_时间块稳定性.png",
+    "Hash": "D3ECB6DF8C1356DC2BD041CDD40CAEBD7B527F63731EFCCDB583890CD1636258"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目1\\图片\\07_处理前后对照.png",
+    "Hash": "05B590216FE891E01DBA4CB9C07B6DC7F027350CF92AAAD3B56DE8276E835723"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目1\\图片\\08_记录A_单试次热图.png",
+    "Hash": "A21488CDE0FACD121D489DB13A554BF584909E5B8CF1BCAA32C0229F17D7992B"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目1\\图片\\08_记录B_单试次热图.png",
+    "Hash": "A5EDF6F2BE317139D36456DBB7CCC07651B7E8ABE4F7CF60B2681BDEA6DD6C26"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目1\\图片\\09_晚期单试次诊断.png",
+    "Hash": "5B078D2A9369D6CE3D9FE861C564AD75F5A25D1BA8F52377137D5E1DE4E026B8"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目1\\数据\\250-500ms_响应与差值.csv",
+    "Hash": "F707E4E4819FE082CA725890873019C8F6985DCE0554979E68D9266E55CF13C2"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目1\\数据\\窗口均值与条件区间.csv",
+    "Hash": "C4927E0F753377A23551BE4E117743C8D5EA2F66653883F77ADB58D3DC542F74"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目1\\数据\\解析拟合系数.csv",
+    "Hash": "319D80F0797C309AA01B6D524AEEA34D78C6F4B3FED413F4441E59BDEEA6E503"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目1\\数据\\全时段_响应与差值.csv",
+    "Hash": "91F698585C60D226FDCD48290934F9B4445556C17A594E5B074B091F7FE098F4"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\01_最终ERP与拟合.fig",
+    "Hash": "F36FCE1B6A32A5EBE6EB6527ACCC4FF6D187070B0FBC2276CDA82F44F755AE4B"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\01_最终ERP与拟合.png",
+    "Hash": "E4BB0996EC55C0E87F860ABDC72F7FD3F712B3E7141E1316B2E1FDBAE3514EA6"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\02_250-500ms左右响应.fig",
+    "Hash": "8793B99C156BC130CBCF6D738751FF50608AE08FD5F84801DD3EF4D799581DCE"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\02_250-500ms左右响应.png",
+    "Hash": "EB6A0C0C9241BCEA68F01571D770B9A7659321123182198907FD15155885742C"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\03_全时段左右差值.fig",
+    "Hash": "5CE0B8994E8B5976200BF7C2B63568C68BD64F81BA35137CBD795E42A486C5B9"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\03_全时段左右差值.png",
+    "Hash": "EF0A072B1E9744E437B408AE71875F2DF5652F50A3980740C24865997B52DD08"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\04_250-500ms左右差值.fig",
+    "Hash": "AFA0E51EC73A37EDB9D667E0EE98CB42A394C6078B501AF2F8B8AF84A3A539D2"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\04_250-500ms左右差值.png",
+    "Hash": "E94B8030821DBF19E1E33ADC11DC8566ACE8C0FCBA44EB036929FBA9DFE8C7DB"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\05_处理步骤对照.fig",
+    "Hash": "2069D291A181E51E2EC1BB4A373D968500F37DE835A74C998FA2C335CD5EAEAF"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\05_处理步骤对照.png",
+    "Hash": "D7CCE091A62D96B1B2579845A189B88C62D79BF423A48104C79F2A0BB63F48D7"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\06_时间块稳定性.fig",
+    "Hash": "8E7BB16805049510D7684E509B49EC06E1FAB6D8F8865C72886EDD8078116D46"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\06_时间块稳定性.png",
+    "Hash": "C7EDAE232E44D9C78C2E8D3318E236B79434700A92BE45F1BDF60DD3279BEA2B"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\07_处理前后对照.fig",
+    "Hash": "FBFC3E14E0462122524D769DBAC7725883BAD07A415C7BBD3B0D1EE56CD66BBD"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\07_处理前后对照.png",
+    "Hash": "3EE4F7A072D81BE32FE097896D903F1A422DC39AC2A3953CE844BAD310923CC4"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\08_记录A_单试次热图.fig",
+    "Hash": "2814C09131281AD45BA2865C6FAE57231D631E6A8B898E1E291488678BF37455"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\08_记录A_单试次热图.png",
+    "Hash": "DD35E9E059EF772AF3FD74CAD88094761ED8B72F025315D438AAC6F11B896A5F"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\08_记录B_单试次热图.fig",
+    "Hash": "C0EFF0332EDE24ABAD0FC9BEBF950240F7F7A1AE55D8D5A2B307EF6B0E51B2EC"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\08_记录B_单试次热图.png",
+    "Hash": "FC47B2E5E08B02262CD9E0FBB1876134AADF62094348515A1FE866C7F2D3A6F3"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\09_晚期单试次诊断.fig",
+    "Hash": "2BF27CCCFE9E7DDD35732FC8E76516F13071E05EF7BE8748C85A6704A283076F"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\图片\\09_晚期单试次诊断.png",
+    "Hash": "F665DAE5A9BE79091846330F99B8CA890F11F4393494A366F0A08B66B39D094C"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\数据\\250-500ms_响应与差值.csv",
+    "Hash": "B310225910E685CEDC8BF701C693D2322E1E8745FE02E670A1C9F8C4ACA33827"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\数据\\窗口均值与条件区间.csv",
+    "Hash": "5C91ED860B344CD64CDCE52AFCCD4BE9E0D4214BBF6D46EAEABA915C6347F122"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\数据\\解析拟合系数.csv",
+    "Hash": "580B335335E393306DF3D092FC8DD443C1714309F3E3905FBE1C8C1BEFA602D9"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\实验项目2\\数据\\全时段_响应与差值.csv",
+    "Hash": "1921ACEDB673F74F7FD31D05378AC1DD728DDCF0611DA8A3E15592FA8C5C9D6F"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\方法验证\\处理步骤对照.csv",
+    "Hash": "D641086D568EF23C2C613DC23569B23BD89A391FAB370388ED5F73B455D4556B"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\方法验证\\单试次影响.csv",
+    "Hash": "846F1E9221FFD62E058C4CCC7FD8DE4C99E760708F1680910463F0F266D0D6D2"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\方法验证\\时间块稳定性.csv",
+    "Hash": "9FCEFD08617C7A1E9432EF2814B409A2E030882EB1C8BD34E47A5A7276DE1B4A"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\方法验证\\已知波形保留.csv",
+    "Hash": "5ACBFD9AF0FCB5FBC96E7D0CCA7D2B94BDE277F0C15379CC1F9FC6501185FC9A"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\方法验证\\已知波形保留示例.fig",
+    "Hash": "EE5FA874E01C2BF7D77F64DE4872480CAF9D6C649F92EB41C469C988A8B94543"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\方法验证\\已知波形保留示例.png",
+    "Hash": "48B84D6E62187891152BE681ADD8DAD07FDDFCD9ED3A133CAA8AA0074C0940EB"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\方法验证\\质量权重.csv",
+    "Hash": "7A1A523FE4DAC67A24D42B4C4BFFD8CC5ABAB0561C40523EC74FC925647591C3"
+  },
+  {
+    "Path": "D:\\数模真题\\中文题目\\C题\\matlab\\结果\\方法验证\\逐试次诊断.csv",
+    "Hash": "8132F77AF7A63796121D9440D1F70D2C26D0052633E57568D6F2A5E46C9D00D7"
+  }
+]

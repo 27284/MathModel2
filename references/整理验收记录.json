@@ -1,0 +1,30 @@
+{
+  "project": "D:\\pycharm\\Math_Model2",
+  "backup": "D:\\数模真题\\中文题目\\C题\\第二问\\history\\Math_Model2_before_unification_20260925_110334.zip",
+  "first_question_files_unchanged": 152,
+  "obsolete_paths_removed": [
+    "D:\\pycharm\\Math_Model2\\eeg_model2",
+    "D:\\pycharm\\Math_Model2\\eeg_refinement",
+    "D:\\pycharm\\Math_Model2\\tests",
+    "D:\\pycharm\\Math_Model2\\__pycache__",
+    "D:\\pycharm\\Math_Model2\\outputs\\standard",
+    "D:\\pycharm\\Math_Model2\\outputs\\refinement",
+    "D:\\pycharm\\Math_Model2\\outputs\\quick",
+    "D:\\pycharm\\Math_Model2\\outputs\\quick_verified",
+    "D:\\pycharm\\Math_Model2\\improve_model2.py",
+    "D:\\pycharm\\Math_Model2\\refresh_report.py",
+    "D:\\pycharm\\Math_Model2\\参考方法改进说明.md",
+    "D:\\pycharm\\Math_Model2\\改进实验结论.md",
+    "D:\\pycharm\\Math_Model2\\交付说明.md",
+    "D:\\pycharm\\Math_Model2\\模型与代码对应说明.md",
+    "D:\\pycharm\\Math_Model2\\requirements-lock.txt",
+    "D:\\pycharm\\Math_Model2\\.run\\第二问改进版.run.xml",
+    "D:\\pycharm\\Math_Model2\\references\\config_before_json_fix.py",
+    "D:\\pycharm\\Math_Model2\\references\\main_before_history_fix.py",
+    "D:\\pycharm\\Math_Model2\\references\\revision_history.json"
+  ],
+  "installed_at": "2026-09-25T11:23:05.6523305+08:00",
+  "unit_tests_passed": 12,
+  "default_main_resume_verified": true,
+  "prediction_hashes_unchanged_on_resume": true
+}
