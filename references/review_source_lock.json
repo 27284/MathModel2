@@ -1,0 +1,14 @@
+{
+  "frozen_code": {
+    "eeg_model2\\data.py": "337cfba40349cee0a068ca3d2ec15b5fb61f1a71026c84b5b596bfc67fe5c0aa",
+    "eeg_model2\\preprocess.py": "1cb94b79fb1f952b426bc12697cf6bf5fdd490ca941c1fedb34a43e9401f9f9e",
+    "eeg_model2\\config.py": "41c81bd3525f87951c62e4434ac0eb09b7f572123d36cfa236a495f4e5431fb2"
+  },
+  "raw_data": {
+    "VisualCogA_Task-1": "02a8167b243815c3d048763528641f002eeef3b3903a31ea130b1f4e0cfc6b33",
+    "VisualCogA_Task-2": "c120ef16ed6bd1a2f1e86e0ab030c6306d08e555a71359cf455744a9904cb748",
+    "VisualCogB_Task-1": "e6fb2684bddeed0f43e541a52928ce73c690a9b1f91e23a6404e0537f0ef0fc9",
+    "VisualCogB_Task-2": "c58c998880682027119548029ba92240604b9ecf4138e6c4ea3efe4522212e9d"
+  },
+  "backup": "D:\\数模真题\\中文题目\\C题\\第二问\\history\\Math_Model2_before_review_20260925.zip"
+}

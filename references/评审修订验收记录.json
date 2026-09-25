@@ -1,0 +1,21 @@
+{
+  "project": "D:\\pycharm\\Math_Model2",
+  "environment": "EEGModel",
+  "installed_at": "2026-09-25T16:39:03.2861735+08:00",
+  "backup": "D:\\数模真题\\中文题目\\C题\\第二问\\history\\Math_Model2_before_review_20260925.zip",
+  "unit_tests_passed": 23,
+  "unit_tests_skipped": 0,
+  "completed_permutations": 200,
+  "first_question_files_unchanged": 152,
+  "raw_data_and_preprocessing_frozen": true,
+  "default_main_resume_verified": true,
+  "prediction_and_permutation_hashes_unchanged": true,
+  "primary_classifier": "per-record temporal24 LR(C=0.1), unweighted",
+  "overall_ba": 0.557504873294347,
+  "task1_ba": 0.6066619418851878,
+  "task2_ba": 0.5074330291433617,
+  "unimplemented_review_items": [
+    "30-column time warps",
+    "anatomical spatial forward model"
+  ]
+}
